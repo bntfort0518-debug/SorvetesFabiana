@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sorveteria Fabiana — Sorvetes artesanais feitos com frutas naturais em Colombo-PR. Delivery sem contato.">
+  <meta name="theme-color" content="#E85D75">
+  <title>Sorveteria Fabiana | Sorvetes Artesanais em Colombo - PR</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/fav.ico">
+  <link rel="shortcut icon" href="/fav.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVEGAÇÃO ========== -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#" class="header__logo" aria-label="Sorveterias Fabiana — Página inicial">
+        <img src="/assets/images/logo.jpg" alt="" class="header__logo-img" width="40" height="40">
+        <span class="header__logo-text">Sorveterias Fabiana</span>
+      </a>
+
+      <button class="header__menu-btn" id="menuBtn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navMenu">
+        <span class="header__menu-bar"></span>
+        <span class="header__menu-bar"></span>
+        <span class="header__menu-bar"></span>
+      </button>
+
+      <nav class="header__nav" id="navMenu" aria-label="Menu principal">
+        <ul class="header__nav-list">
+          <li><a href="#cardapio" class="header__nav-link">Cardápio</a></li>
+          <li><a href="#sobre" class="header__nav-link">Sobre</a></li>
+          <li><a href="#localizacao" class="header__nav-link">Localização</a></li>
+          <li>
+            <a href="https://wa.me/554136667908" class="header__nav-cta" target="_blank" rel="noopener noreferrer">
+              Pedir pelo WhatsApp
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-label="Apresentação da Sorveteria Fabiana">
+      <div class="hero__image-wrapper">
+        <img
+          src="/assets/images/banner5.jpg"
+          alt="Sorvetes artesanais coloridos com frutas frescas e complementos na Sorveteria Fabiana"
+          class="hero__image"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        >
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <span class="hero__badge">&#127818; Artesanais com frutas naturais</span>
+        <h1 class="hero__title">Sorveteria<br><strong>Fabiana</strong></h1>
+        <p class="hero__subtitle">Sorvetes feitos com carinho e ingredientes frescos direto para a sua casa em Colombo.</p>
+        <div class="hero__actions">
+          <a href="https://wa.me/554136667908?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido!" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pedir Agora
+          </a>
+          <a href="#cardapio" class="btn btn--secondary">Ver Cardápio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CARDÁPIO / DESTAQUES ========== -->
+    <section class="cardapio" id="cardapio" aria-label="Cardápio em destaque">
+      <div class="section-container">
+        <span class="section-tag">&#10024; Nosso Cardápio</span>
+        <h2 class="section-title">Destaques da Casa</h2>
+        <p class="section-desc">Escolha entre sabores artesanais feitos com frutas frescas e ingredientes selecionados.</p>
+
+        <div class="cardapio__grid">
+
+          <!-- Card 1 -->
+          <article class="card" role="button" tabindex="0" data-name="Sorvete de Frutas" data-desc="Sabores naturais feitos com frutas frescas da estação. Morango, manga, maracujá e muito mais." data-img="/assets/images/sorvete.jpg">
+            <div class="card__image-wrapper">
+              <img src="/assets/images/sorvete.jpg" alt="Sorvetes de Fruta" class="card__image" loading="lazy" width="600" height="400">
+              <span class="card__badge">&#127819; Artesanal</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Sorvete de Frutas</h3>
+              <p class="card__desc">Sabores naturais feitos com frutas frescas da estação. Morango, manga, maracujá e muito mais.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" role="button" tabindex="0" data-name="Açaí & Cia" data-desc="Açaí cremoso com coberturas, granola crocante, frutas e complementos à sua escolha." data-img="/assets/images/acai2.jpg">
+            <div class="card__image-wrapper">
+              <img src="/assets/images/acai2.jpg" alt="Açaí e Cia" class="card__image" loading="lazy" width="600" height="400">
+              <span class="card__badge" style="background:#6EC6E8">&#129744; Popular</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Açaí & Cia</h3>
+              <p class="card__desc">Açaí cremoso com coberturas, granola crocante, frutas e complementos à sua escolha.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" role="button" tabindex="0" data-name="Milkshakes" data-desc="Milkshakes cremosos e generosos com chantilly e coberturas especiais." data-img="/assets/images/milk.jpg">
+            <div class="card__image-wrapper">
+              <img src="/assets/images/milk.jpg" alt="Milkshakes" class="card__image" loading="lazy" width="600" height="400">
+              <span class="card__badge" style="background:#FFB347">&#127847; FAVORITO</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Milkshakes</h3>
+              <p class="card__desc">Milkshakes cremosos e generosos com chantilly e coberturas especiais.</p>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card" role="button" tabindex="0" data-name="Picolés" data-desc="Combos especiais para famílias e grupos. Porções generosas com preço acessível." data-img="/assets/images/picole.jpg">
+            <div class="card__image-wrapper">
+              <img src="/assets/images/picole.jpg" alt="Picolés" class="card__image" loading="lazy" width="600" height="400">
+              <span class="card__badge" style="background:#8FBC8F">&#128149; combos</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Picolés</h3>
+              <p class="card__desc">Combos especiais para famílias e grupos. Porções generosas com preço acessível.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE NÓS ========== -->
+    <section class="sobre" id="sobre" aria-label="Sobre a Sorveteria Fabiana">
+      <div class="section-container sobre__grid">
+        <div class="sobre__text">
+          <span class="section-tag">&#10084;&#65039; Nossa História</span>
+          <h2 class="section-title">Sobre a Fabiana</h2>
+          <p class="sobre__desc">
+            A Sorveteria Fabiana nasceu do amor por sorvetes artesanais e pelo desejo de levar sabor e alegria para as famílias de Colombo.
+            Cada sabor é preparado com ingredientes frescos e selecionados, oferecendo uma experiência única e saborosa.
+          </p>
+          <p class="sobre__desc">
+            Nosso compromisso é com a qualidade, a higiene e o carinho no atendimento. Venha nos visitar ou peça pelo delivery!
+          </p>
+
+          <div class="sobre__diferenciais">
+            <div class="sobre__diferencial">
+              <span class="sobre__diferencial-icon">&#127818;</span>
+              <div>
+                <strong>Ingredientes Naturais</strong>
+                <p>Frutas frescas e ingredientes selecionados diariamente.</p>
+              </div>
+            </div>
+            <div class="sobre__diferencial">
+              <span class="sobre__diferencial-icon">&#128666;</span>
+              <div>
+                <strong>Delivery Sem Contato</strong>
+                <p>Receba seu pedido de forma segura e prática.</p>
+              </div>
+            </div>
+            <div class="sobre__diferencial">
+              <span class="sobre__diferencial-icon">&#128151;</span>
+              <div>
+                <strong>Feito com Carinho</strong>
+                <p>Cada porção preparada com amor para você.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre__image-wrapper">
+          <img src="/assets/images/acai1.jpg" alt="Açaí Fabiana" class="about-image" loading="lazy" width="600" height="800">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AVALIAÇÕES ========== -->
+    <section class="avaliacoes" id="avaliacoes" aria-label="Avaliações dos clientes">
+      <div class="section-container">
+        <span class="section-tag">&#11088; Avaliações</span>
+        <h2 class="section-title">O que Dizem Nossos Clientes</h2>
+
+        <div class="avaliacoes__resumo">
+          <div class="avaliacoes__nota">
+            <span class="avaliacoes__nota-numero">4.8</span>
+            <div class="avaliacoes__nota-estrelas" aria-label="4.8 de 5 estrelas">
+              <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+            </div>
+          </div>
+          <p class="avaliacoes__fonte">Baseado em avaliações reais do Google</p>
+        </div>
+
+        <div class="avaliacoes__grid">
+
+          <article class="avaliacoes__card">
+            <div class="avaliacoes__card-header">
+              <div class="avaliacoes__avatar" style="background:#E85D75">MC</div>
+              <div>
+                <strong class="avaliacoes__nome">Maria Clara</strong>
+                <span class="avaliacoes__data">há 2 semanas</span>
+              </div>
+            </div>
+            <div class="avaliacoes__estrelas" aria-label="5 de 5 estrelas">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p class="avaliacoes__texto">Melhor sorvete da região! O de morango é incomparável. Atendimento sempre muito carinhoso.</p>
+          </article>
+
+          <article class="avaliacoes__card">
+            <div class="avaliacoes__card-header">
+              <div class="avaliacoes__avatar" style="background:#6EC6E8">RS</div>
+              <div>
+                <strong class="avaliacoes__nome">Roberto Silva</strong>
+                <span class="avaliacoes__data">há 1 mês</span>
+              </div>
+            </div>
+            <div class="avaliacoes__estrelas" aria-label="5 de 5 estrelas">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p class="avaliacoes__texto">Pedi delivery pelo WhatsApp e chegou super rápido. Açaí cremoso e com bastante fruta. Recomendo demais!</p>
+          </article>
+
+          <article class="avaliacoes__card">
+            <div class="avaliacoes__card-header">
+              <div class="avaliacoes__avatar" style="background:#FFB347">AF</div>
+              <div>
+                <strong class="avaliacoes__nome">Ana Ferreira</strong>
+                <span class="avaliacoes__data">há 3 semanas</span>
+              </div>
+            </div>
+            <div class="avaliacoes__estrelas" aria-label="5 de 5 estrelas">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p class="avaliacoes__texto">Lugar impecável, limpo e acolhedor. As crianças amaram os picolés de fruta. Voltarei com certeza!</p>
+          </article>
+
+          <article class="avaliacoes__card">
+            <div class="avaliacoes__card-header">
+              <div class="avaliacoes__avatar" style="background:#8FBC8F">PL</div>
+              <div>
+                <strong class="avaliacoes__nome">Pedro Lima</strong>
+                <span class="avaliacoes__data">há 2 meses</span>
+              </div>
+            </div>
+            <div class="avaliacoes__estrelas" aria-label="4 de 5 estrelas">&#11088;&#11088;&#11088;&#11088;&#9734;</div>
+            <p class="avaliacoes__texto">Milkshake de Nutella é absurdamente bom. Único ponto: fechou um pouco cedo no sábado. Mas o sorvete compensa tudo.</p>
+          </article>
+
+          <article class="avaliacoes__card">
+            <div class="avaliacoes__card-header">
+              <div class="avaliacoes__avatar" style="background:#E85D75">JO</div>
+              <div>
+                <strong class="avaliacoes__nome">Juliana Oliveira</strong>
+                <span class="avaliacoes__data">há 1 semana</span>
+              </div>
+            </div>
+            <div class="avaliacoes__estrelas" aria-label="5 de 5 estrelas">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p class="avaliacoes__texto">Achei por acaso e agora sou cliente fiel. Sorvete artesanal de verdade, dá para sentir que é feito com carinho.</p>
+          </article>
+
+          <article class="avaliacoes__card">
+            <div class="avaliacoes__card-header">
+              <div class="avaliacoes__avatar" style="background:#6EC6E8">CM</div>
+              <div>
+                <strong class="avaliacoes__nome">Carlos Mendes</strong>
+                <span class="avaliacoes__data">há 5 dias</span>
+              </div>
+            </div>
+            <div class="avaliacoes__estrelas" aria-label="5 de 5 estrelas">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p class="avaliacoes__texto">Pedimos para uma festa infantil e foi um sucesso total. Preço justo e sorvete excelente. Parabéns!</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LOCALIZAÇÃO ========== -->
+    <section class="localizacao" id="localizacao" aria-label="Localização e horário de funcionamento">
+      <div class="section-container">
+        <span class="section-tag">&#128205; Venha Nos Visitar</span>
+        <h2 class="section-title">Onde Estamos</h2>
+
+        <div class="localizacao__grid">
+          <div class="localizacao__mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.5!2d-49.19!3d-25.32!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zRy4gR3VzdGF2byBLYWJpdHNjaGtlLCA5MDMgLSBWaWxhIEFsdG8gZGEgQ3J1em8sIENvbG9tYm8gLSBQUg!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="350"
+              style="border:0; border-radius: 20px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização da Sorveteria Fabiana no Google Maps"
+            ></iframe>
+          </div>
+
+          <div class="localizacao__info">
+            <div class="localizacao__info-card">
+              <span class="localizacao__info-icon">&#128205;</span>
+              <div>
+                <strong>Endereço</strong>
+                <p>R. Gustavo Kabitschke, 903<br>Vila Alto da Cruz, Colombo - PR</p>
+              </div>
+            </div>
+
+            <div class="localizacao__info-card">
+              <span class="localizacao__info-icon">&#128337;</span>
+              <div>
+                <strong>Horário de Funcionamento</strong>
+                <p>
+                  Terça-feira: 10:00–19:00<br>
+                  Quarta-feira: 10:00–19:00<br>
+                  Quinta-feira: 10:00–19:00<br>
+                  Sexta-feira: 10:00–19:00<br>
+                  Sábado: 10:00–19:00<br>
+                  Domingo: 10:00–19:00<br>
+                  Segunda-feira: 10:00–19:00
+                </p>
+              </div>
+            </div>
+
+            <div class="localizacao__info-card">
+              <span class="localizacao__info-icon">&#128222;</span>
+              <div>
+                <strong>Telefone</strong>
+                <p><a href="tel:+554136667908">(41) 3666-7908</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <span class="footer__logo-icon">&#127846;</span>
+        <span class="footer__logo-text">Sorveteria Fabiana</span>
+      </div>
+
+      <address class="footer__address">
+        R. Gustavo Kabitschke, 903 — Vila Alto da Cruz, Colombo - PR<br>
+        Tel: <a href="tel:+554136667908">(41) 3666-7908</a>
+      </address>
+
+      <p class="footer__copy">&copy; 2026 Sorveteria Fabiana. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== BOTÃO WHATSAPP FLUTUANTE ========== -->
+  <a
+    href="https://wa.me/554136667908?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido!"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir conversa no WhatsApp"
+  >
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ========== MODAL PRODUTO ========== -->
+  <div class="modal" id="productModal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__container">
+      <button class="modal__close" data-close aria-label="Fechar modal">&times;</button>
+      <img class="modal__image" id="modalImage" src="" alt="">
+      <div class="modal__body">
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__desc" id="modalDesc"></p>
+        <a class="btn btn--primary modal__cta" id="modalCta" href="#" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pedir no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
